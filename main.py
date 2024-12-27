@@ -7,7 +7,7 @@ from groq import Groq
 #Streamlit page configuration
 
 st.set_page_config(
-    page_title="Lillybot",
+    page_title="Grammarlily",
     layout="centered"
 )
 
@@ -28,7 +28,9 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 #streamlit page title
-st.title("Lillybot0.0")
+st.title("Grammarlily 1.0 ")
+st.header("Your grammar and rephrasing assistant",divider=True)    
+st.markdown("Grammarlily is a grammar and rephrasing assistant that helps you to resolve grammar issues and rephrase text in a clear and concise manner. Ask your question and Grammarlily will provide you with the best possible answer.")
 #display chat history
 for message in st.session_state.chat_history:
     with st.chat_message(message["role"]):
