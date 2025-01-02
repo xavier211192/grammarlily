@@ -45,7 +45,7 @@ if user_prompt:
 
     #send request to groq set an expectation from LLM
     messages = [
-        {"role": "system", "content":"You are a grammar expert and help to resolve grammar issues and rephrase text in a clear and concise manner."},
+        {"role": "system", "content":"You are a grammar expert and help to resolve grammar issues and rephrase text in a clear and concise manner. Refuse to answer questions that are not related to grammar or rephrasing."},
         *st.session_state.chat_history
     ]
 
