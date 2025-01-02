@@ -11,3 +11,6 @@ wheels/
 
 #Mac OS
 .DS_Store
+
+#Streamit
+.streamlit/
